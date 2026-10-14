@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Level UI — Frontend Engineering, UI/UX & Technical SEO</title>
+  <title>Level UI — Frontend Engineering, UI/UX &amp; Technical SEO</title>
 
   <meta
     name="description"
@@ -16,10 +16,15 @@
   <meta name="author" content="Level UI">
 
   <link rel="canonical" href="https://level-ui.github.io/details.en/">
+  <link rel="alternate" hreflang="en" href="https://level-ui.github.io/details.en/">
+  <link rel="alternate" hreflang="de" href="https://level-ui.github.io/details.de/">
+  <link rel="alternate" hreflang="ro" href="https://level-ui.github.io/details.ro/">
+  <link rel="alternate" hreflang="x-default" href="https://level-ui.github.io/details.en/">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Level UI">
-  <meta property="og:title" content="Level UI — Frontend Engineering, UI/UX & Technical SEO">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Level UI — Frontend Engineering, UI/UX &amp; Technical SEO">
   <meta
     property="og:description"
     content="A technical overview of Level UI’s approach to UI/UX, frontend engineering, performance, and scalable digital platforms."
@@ -32,7 +37,7 @@
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Level UI — Frontend Engineering, UI/UX & Technical SEO">
+  <meta name="twitter:title" content="Level UI — Frontend Engineering, UI/UX &amp; Technical SEO">
   <meta
     name="twitter:description"
     content="A technical overview of Level UI’s approach to UI/UX, frontend engineering, performance, and scalable digital platforms."
@@ -56,8 +61,12 @@
         "name": "Europe"
       }
     ],
+    "availableLanguage": ["en", "de", "ro"],
     "sameAs": [
-      "https://github.com/Level-UI"
+      "https://github.com/Level-UI",
+      "https://www.trustpilot.com/review/levelui.com",
+      "https://levelui.de/",
+      "https://levelui.ro/"
     ]
   }
   </script>
@@ -430,6 +439,31 @@
       background: var(--surface);
     }
 
+    .reading-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px 20px;
+      margin: 34px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .reading-list li {
+      padding: 22px 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .reading-list a {
+      font-weight: 750;
+    }
+
+    .reading-list p {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
     .contact-panel {
       padding: clamp(30px, 5vw, 54px);
       border-radius: 24px;
@@ -476,6 +510,12 @@
       color: #dfe3ff;
     }
 
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 20px;
+    }
+
     @media (max-width: 820px) {
       .header-inner {
         padding-bottom: 60px;
@@ -496,7 +536,8 @@
 
       .cards,
       .work-grid,
-      .approach-grid {
+      .approach-grid,
+      .reading-list {
         grid-template-columns: 1fr;
       }
 
@@ -571,7 +612,10 @@
           <a href="#services">Services</a>
           <a href="#approach">Approach</a>
           <a href="#work">Selected work</a>
+          <a href="#reading">Guides</a>
           <a href="#contact">Contact</a>
+          <a href="https://level-ui.github.io/details.de/" hreflang="de" lang="de" title="Deutsch">DE</a>
+          <a href="https://level-ui.github.io/details.ro/" hreflang="ro" lang="ro" title="Română">RO</a>
         </nav>
       </div>
 
@@ -692,7 +736,13 @@
         <h2 id="work-heading">Typical project engagements</h2>
 
         <p class="section-lead">
-          This page is a technical overview of our work.
+          This page is a technical overview of our work. Finished projects, with
+          screenshots and live links, are in the
+          <a
+            href="https://levelui.com/portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Level UI portfolio</a>.
         </p>
 
         <div class="work-grid">
@@ -728,6 +778,55 @@
         </p>
       </section>
 
+      <section id="reading" aria-labelledby="reading-heading">
+        <h2 id="reading-heading">Further reading</h2>
+
+        <p class="section-lead">
+          Longer write-ups on the questions that come up most in our projects. All
+          guides are on
+          <a
+            href="https://levelui.com/resources"
+            target="_blank"
+            rel="noopener noreferrer"
+          >levelui.com/resources</a>.
+        </p>
+
+        <ul class="reading-list">
+          <li>
+            <a
+              href="https://levelui.com/resources/how-to-get-a-100-pagespeed-score"
+              target="_blank"
+              rel="noopener noreferrer"
+            >PageSpeed 100: how to get it, and what the score means</a>
+            <p>What a perfect Lighthouse score measures, and what it leaves out.</p>
+          </li>
+          <li>
+            <a
+              href="https://levelui.com/resources/website-redesign-without-losing-seo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Redesign a website without losing rankings</a>
+            <p>The checks that keep traffic intact through a relaunch.</p>
+          </li>
+          <li>
+            <a
+              href="https://levelui.com/resources/wcag-eaa-compliance-guide"
+              target="_blank"
+              rel="noopener noreferrer"
+            >European Accessibility Act &amp; WCAG 2.2 AA</a>
+            <p>What the EAA requires from websites, and where WCAG fits in.</p>
+          </li>
+          <li>
+            <a
+              href="https://levelui.com/resources/figma-designs-before-development"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Do you still need Figma before development?</a>
+            <p>When a full design file pays off, and when it slows a project down.</p>
+          </li>
+        </ul>
+      </section>
+
       <section id="contact" aria-labelledby="contact-heading">
         <div class="contact-panel">
           <h2 id="contact-heading">Building a website or digital product?</h2>
@@ -756,13 +855,11 @@
     <div class="container footer-inner">
       <p>&copy; 2026 Level UI. Frontend engineering, UI/UX, and technical SEO.</p>
 
-      <a
-        href="https://levelui.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        levelui.com
-      </a>
+      <div class="footer-links">
+        <a href="https://level-ui.github.io/details.de/" hreflang="de" lang="de">Deutsch</a>
+        <a href="https://level-ui.github.io/details.ro/" hreflang="ro" lang="ro">Română</a>
+        <a href="https://levelui.com/" target="_blank" rel="noopener noreferrer">levelui.com</a>
+      </div>
     </div>
   </footer>
 </body>
